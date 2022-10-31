@@ -1,0 +1,48 @@
+@import '../../common/variable';
+
+.form_container{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 25px;
+    margin-top: 25px;
+
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 7px rgba(0, 0, 0, 0.185);
+    .agreement{
+      margin-top: 15px;
+      color: $GrayishBlue;
+      font-size: 11px;
+      text-align: center;
+      padding: 0px 10px;
+      span{
+        color: $Red;
+        font-weight: 700;
+      }
+    }
+}
+
+@media only screen and (min-width:992px){
+  
+    .form_container{ 
+        padding: 40px;
+        margin-top: 25px;
+    
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 7px rgba(0, 0, 0, 0.185);
+        .agreement{
+          margin-top: 20px;
+          color: $GrayishBlue;
+          font-size: 11px;
+          text-align: center;
+          padding: 0px 10px;
+          span{
+            color: $Red;
+            font-weight: 700;
+          }
+        }
+    }
+    
+}

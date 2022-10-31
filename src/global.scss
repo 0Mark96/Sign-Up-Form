@@ -1,0 +1,39 @@
+@import './common/variable';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+    background-color: $Red;
+    background-image: url('./images/bg-intro-mobile.png');
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+@media only screen and (min-width:768px){
+    body{
+        background-image: url('./images/bg-intro-desktop.png');
+        background-position: cover;
+        background-repeat: repeat;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width:992px){
+    body{
+        background-image: url('./images/bg-intro-desktop.png');
+        background-position: cover;
+        background-repeat: repeat;
+            align-items: center;
+    }
+}

@@ -1,0 +1,11 @@
+@import '../../common/variable';
+
+.info_wrapper{
+    text-align: center;
+    padding: 20px 40px;
+
+    background-color: $Blue;
+    border-radius: 10px;
+    box-shadow: 0px 7px rgba(0, 0, 0, 0.185) ;
+}
+

@@ -1,0 +1,56 @@
+@import '../../common/variable';
+
+.input_wrapper{
+    width: 100%;
+    position: relative;
+    margin-bottom:20px;
+}
+
+.input_form{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 15px 25px;
+    color: $DarkBlue;
+    border:1px solid $GrayishBlue;
+    border-radius: 5px;
+    outline: none;
+    z-index: 0;
+    &:focus{
+        border: 1px solid $Blue;
+     } 
+}
+
+// ERROR STYLE
+
+// add to wrapper 
+.err_img{
+    &::before{
+        content: '';
+        background: url('../../images/icon-error.svg') no-repeat center  ;
+        width:30px;
+        height:100%;
+        position:absolute;
+        top:0;
+        right: 5%;
+        z-index: 2;
+    }
+}
+
+// input style
+.err_input_border{
+        border: 1px solid red;
+        color: $Red;
+}
+
+// sentences style
+.notice_err{
+    color: red;
+    font-size: 9px;
+    font-weight: 600;
+    font-style: italic;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(107%);
+}
